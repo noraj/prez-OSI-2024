@@ -17,13 +17,27 @@ footer: '19/10/204 - Open Source Immersion (OSI) 2024'
 
 ---
 
-## Présentation
+## Présentation - Activités
 
 - Alexandre ZANNI (@noraj)
 - Ingénieur en test d'intrusion
 - Recherche et développement
 - Contributeur logiciel libre
 - Mainteneur BlackArch Linux
+
+![bg contain right:20%](assets/noraj-qrcode.png)
+
+---
+
+## Présentation - Github
+
+- depuis 2016
+- 6 k étoiles reçues
+- 1.8 k abonnés
+- 13k+ commits
+- 1.6k+ PRs
+- 1.9k issues
+- contributions + 100anines projets
 
 ![bg contain right:20%](assets/noraj-qrcode.png)
 
@@ -58,6 +72,7 @@ Distribution GNU/Linux en source ouverte pensée pour le test d'intrusion et plu
 ![bg](assets/ba-slider2.png)
 
 2920 outils (08/10/2024)
+vs ~ 600 pour Kali Linux
 
 ---
 
@@ -91,13 +106,13 @@ Distribution GNU/Linux en source ouverte pensée pour le test d'intrusion et plu
 
 ![bg left contain](assets/blackarch-star-history.svg)
 
-- 562 fourches (forks)
-- 2,8k étoiles (stars)
+- 562 fourches (_forks_)
+- 2,8k étoiles (_stars_)
 - 99 contributeurs
 - 4-5 membres actifs
-- 24313 archivages (commits)
-- 1635 fusiodemandes (merge requests)
-- 2535 tickets (issues)
+- 24313 archivages (_commits_)
+- 1635 fusiodemandes (_merge requests_)
+- 2535 tickets (_issues_)
 
 ---
 
@@ -164,6 +179,52 @@ package() {
 - MAJ / ajouter des modèles de PKGBUILD
 - Autres : ISO, torrents, support à la communauté reddit / Matrix / Github / courriel, ajout mirroirs de dépôts
 - Site web, outils comme wordlistctl, webshells
+
+---
+
+![bg left:33% blur:3px](assets/code_cropped.png)
+
+## Rawsec Cybersecurity Inventory
+
+---
+
+![bg contain right:50%](assets/rawsec_logo_355x286.svg)
+![bg contain](assets/rawsec-qrcode.png)
+
+Un inventaire d'outils et de ressources sur la cybersécurité qui vise à aider les gens à trouver tout ce qui est lié à la cybersécurité.
+
+---
+
+<!-- _header: '' -->
+<!-- _footer: '' -->
+
+![bg](assets/rawsec-inventory-search.png)
+
+---
+
+<!-- _header: '' -->
+<!-- _footer: '' -->
+
+![bg](assets/rawsec-inventory-tables.png)
+
+---
+
+#### Statistiques
+
+![bg left contain](assets/rawsec-contribs.png)
+
+- depuis 2017
+- 41 contributeurs
+- 1948 archivages (_commits_)
+- 1578 outils et ressources répertoriés
+
+---
+
+![bg left contain](assets/rawsec-video.png)
+
+[youtu.be/9rzxX0TFT88](https://youtu.be/9rzxX0TFT88)
+
+![](assets/rawsec-video-qrcode.png)
 
 ---
 
