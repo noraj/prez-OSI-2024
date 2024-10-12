@@ -1,5 +1,13 @@
 {
     "markdown.marp.themes": [
         "./themes/cybertopia.css"
+    ],
+    "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+        "archlinux",
+        "blackarch",
+        "cybersecurity",
+        "inventory",
+        "rawsec",
+        "synacktiv"
     ]
 }
