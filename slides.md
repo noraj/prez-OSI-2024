@@ -687,7 +687,9 @@ Exemples :
 
 ## Merci pour votre attention
 
-⚠️ QR code téléchargement PDF
+![](assets/diapo-qrcode.png)
+
+https://jmp.sh/ujYF9kyW
 
 ---
 
