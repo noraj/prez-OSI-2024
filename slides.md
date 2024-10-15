@@ -37,7 +37,7 @@ footer: '19/10/204 - Open Source Immersion (OSI) 2024'
 - 13k+ commits
 - 1.6k+ PRs
 - 1.9k issues
-- contributions + 100anines projets
+- contributions + 100aines projets
 
 ![bg contain right:20%](assets/noraj-qrcode.png)
 
@@ -361,7 +361,7 @@ Mais combien ?
 
 > Le nombre de composants open-source par application commerciale est passé de **84 en 2016** à **528 en 2020**.
 >
-> _Synopsy, Open Source Security & Risk Analysis Report 2021_
+> _Synopsys, Open Source Security & Risk Analysis Report 2021_
 
 ![bg right:30% contain](assets/comp-os-par-app-com.png)
 
@@ -476,7 +476,7 @@ Ordre de résolution `npm install` :
 
 - Local
 - Serveur HTTP externe
-- Github
+- GitHub
 - Registre npm
 
 ---
@@ -570,10 +570,84 @@ CI/CD vulnérables identifiés dans les projets de : [AutoGPT][AutoGPT], [micros
 
 ---
 
-###### Synacktiv - R&D - Extraction de secrets CI/CD - ⚠️
+###### Synacktiv - R&D - Extraction de secrets CI/CD - Liens
 
-https://www.synacktiv.com/publications/cicd-secrets-extraction-tips-and-tricks
-https://github.com/synacktiv/nord-stream
+📰 https://www.synacktiv.com/publications/cicd-secrets-extraction-tips-and-tricks
+
+🧰 https://github.com/synacktiv/nord-stream
+
+---
+
+###### Synacktiv - R&D - Extraction de secrets CI/CD - But
+
+Récupérer les secrets stockés dans une CI/CD depuis un jeton d'accès personnel ayant fuité.
+
+- Azure DevOps
+- GitHub Action
+- GitLab CI
+
+---
+
+Emplacement | Nord Stream | Gitleaks / TruffleHog
+--- | --- | ---
+En clair | ❌ | ✅
+Historique git | ❌ | ✅
+Azure DevOps - Groupe de variables | ✅ | ❌
+Azure DevOps - Fichier sécurisé | ✅ | ❌
+Azure DevOps - Connexion de service | ✅ | ❌
+
+---
+
+Dans Azure DevOps, une fois enregistrés, les secrets
+
+- ❌ interface web ou appels à l'API
+- ✅ contexte d'exécution d'un pipeline
+
+---
+
+Nord Stream automatise le processus de récupération fastidieux. Exemple pour les groupes de variables d'Azure DevOps :
+
+- Lister les secrets des groupes de variables
+- Cloner le dépôt
+- Créer une branche locale
+- Créer un pipeline
+- Générer et écrire le fichier YAML de CI pour l'extraction
+- Pousser le changement sur la nouvelle branche
+
+---
+
+- Démarrer le pipeline
+- Télécharger les résultats
+- Décoder les résultats
+- Effacer les traces
+- Supprimer la branche distante
+
+![bg contain right:50%](assets/nord-stream.png)
+
+---
+
+Emplacement | Nord Stream | Gitleaks / TruffleHog
+--- | --- | ---
+GitHub Action - Organisation | ✅ | ❌
+GitHub Action - Dépôt | ✅ | ❌
+GitHub Action - Environement | ✅ | ❌
+GitHub Action - OpenID Connect | ✅ | ❌
+
+---
+
+Emplacement | Nord Stream | Gitleaks / TruffleHog
+--- | --- | ---
+GitLab CI - Instance | ✅ | ❌
+GitLab CI - Groupe | ✅ | ❌
+GitLab CI - Projet | ✅ | ❌
+GitLab CI - HashiCorp Vault | ✅ | ❌
+
+---
+
+###### Synacktiv - R&D - Extraction de secrets CI/CD - Protection
+
+- Surveillance : journaux, Microsoft Sentinel (Azure DevOps), intégrations SIEM pour GitHub, recherche active, GitHub Advanced Security
+- Prévention : GitHub : règles de protection de branche / environnement (délais d'attente, demande de revue), politique de déploiement de branche
 
 ---
 
@@ -581,10 +655,33 @@ https://github.com/synacktiv/nord-stream
 
 ---
 
-###### Synacktiv - R&D - Symfony - ⚠️
+###### Synacktiv - R&D - Symfony - Liens
 
-https://www.synacktiv.com/publications/looting-symfony-with-eos.html
-https://github.com/synacktiv/eos
+📰 https://www.synacktiv.com/publications/looting-symfony-with-eos.html
+
+🧰 https://github.com/synacktiv/eos
+
+---
+
+###### Synacktiv - R&D - Symfony - Résumé
+
+Symfony (cadriciel web PHP) ➡️ env. `dev` ➡️ mode débogage ➡️ profileur web (`symfony/web-profiler-bundle`)
+
+Ce profileur web permet l'inspection pendant l'exécution et donc l'extraction de : routes, cookies, authentifiants, fichiers, etc.
+
+---
+
+Exemples :
+
+- Barre d'outils
+  ➡️ infos + phpinfo (dont vars. d'env.)
+- Insecption de requêtes
+  - ➡️ infos sensibles dans POST
+  - ➡️ Forger des cookies `Rester connecté`
+- Lecture de fichier
+  - ➡️ Extraction du code source
+
+⚙️ EOS faut tout ça automatiquement
 
 ---
 
@@ -596,7 +693,7 @@ https://github.com/synacktiv/eos
 
 ![bg left:33% blur:3px](assets/code_cropped.png)
 
-## Bonus : Pour aller plus loin
+## Bonus : chaîne d'approvisionnement logicielle
 
 ---
 
