@@ -304,8 +304,8 @@ OpenSSL, [principalement][openssl-contribs] [2 personnes][openssl-main]. Après 
 
 ###### Projets sous-soutenus (anecdotes - left-pad)
 
-En 2016, Azer Koçulu a dépublier plus de 250 de ses dépendances d'NPM.
-En particulier, une des dépendances, [left-pad][left-pad-github] (rajoute des `0` ou des espaces sur la gauche d'une chaîne de caractère), était utilisé par node.js, Babel et des milliers d'autres projets. Le château de carte s'est donc écroulé lorsque ces projets essayaient d'installer leurs dépendances.
+En 2016, Azer Koçulu a dépublié plus de 250 de ses dépendances d'NPM.
+En particulier, une des dépendances, [left-pad][left-pad-github] (rajoute des `0` ou des espaces sur la gauche d'une chaîne de caractères), était utilisée par node.js, Babel et des milliers d'autres projets. Le château de carte s'est donc écroulé lorsque ces projets essayaient d'installer leurs dépendances.
 
 [left-pad-github]:https://github.com/azer/left-pad/blob/master/index.js
 
@@ -324,7 +324,7 @@ Sources [[1]][left-pad-theregister], [[2]][left-pad-qz]
 
 ###### Projets sous-soutenus (anecdotes - xz)
 
-Après la commotion causé par la porte dérobée dans `xz`, [Microsoft a demandé][xz-ffmepg-microsoft] au mainteneurs de FFmpeg de les aider en urgence car utilisé dans un produit Microsoft très populaire.
+Après la commotion causée par la porte dérobée dans `xz`, [Microsoft a demandé][xz-ffmepg-microsoft] aux mainteneurs de FFmpeg de les aider en urgence, car utilisé dans un produit Microsoft très populaire.
 
 [xz-ffmepg-microsoft]:https://threadreaderapp.com/thread/1775178803129602500.html
 
@@ -334,7 +334,7 @@ Après la commotion causé par la porte dérobée dans `xz`, [Microsoft a demand
 
 > Le fiasco de xz a montré comment la dépendance à l'égard de volontaires non rémunérés peut entraîner des problèmes majeurs. Les entreprises qui brassent des milliards de dollars s'attendent à recevoir un soutien gratuit et urgent de la part des bénévoles.
 
-Microsoft avait suggéré pour donner quelques milliers de $ mais n'a finalement jamais souscrit à un contrat de support.
+Microsoft avait envisagé de donner quelques milliers de 💵, mais n'a finalement jamais souscrit à un contrat de support.
 
 ---
 
@@ -422,7 +422,7 @@ Exemples d'attaques sur les dépendances :
 
 ###### Synacktiv - R&D - Confusion de dépendances - Concept
 
-Publier sur un registre de paquets public un logiciel malveillant portant le même nom qu'un paquet privé afin qu'il soit installer à sa place par priorisation des registres.
+Publier sur un registre de paquets public un logiciel malveillant portant le même nom qu'un paquet privé afin qu'il soit installé à sa place par priorisation des registres.
 
 💡 Moyen très effectif de rentrer dans le réseau privé d'une grande organisation.
 
@@ -460,7 +460,7 @@ Peut-être `--source` pour `gem install`. Potentiellement le même comportement 
 
 ###### Synacktiv - R&D - Confusion de dépendances - Artifactory
 
-[JFrog Artifactory][artifactory] est gestionnaire de registre universel. Une de ses fonctionnalités est de mélanger les paquets publics et privés dans un registre virtuel.
+[JFrog Artifactory][artifactory] est un gestionnaire de registre universel. Une de ses fonctionnalités est de mélanger les paquets publics et privés dans un registre virtuel.
 
 Même comportement que pour `pip`. Pareil pour Azure Artifacts.
 
@@ -500,37 +500,36 @@ Support : npm, pypi, cargo, go
 
 ---
 
-## GitHub Action
+## GitHub Actions
+---
+
+###### Synacktiv - R&D - GitHub Actions- Série d'articles
+
+Série _GitHub Actions exploitation_ sur la CI/CD GitHub : GitHub Actions
+
+- [N°1 - Introduction][github-actions-1]
+- [N°2 - Untrusted input][github-actions-2]
+- [N°3 - Repo jacking and environment manipulation][github-actions-3]
+- [N°4 - Self hosted runners][github-actions-4]
+- [N°5 - Dependabot][github-actions-5]
+- [Hors série - Hijacking GitHub runners to compromise the organization][github-actions-hs]
+
+[github-actions-1]:https://www.synacktiv.com/en/publications/github-actions-exploitation-introduction
+[github-actions-2]:https://www.synacktiv.com/publications/github-actions-exploitation-untrusted-input
+[github-actions-3]:https://www.synacktiv.com/publications/github-actions-exploitation-repo-jacking-and-environment-manipulation
+[github-actions-4]:https://www.synacktiv.com/publications/github-actions-exploitation-self-hosted-runners
+[github-actions-5]:https://www.synacktiv.com/publications/github-actions-exploitation-dependabot
+[github-actions-hs]:https://www.synacktiv.com/publications/hijacking-github-runners-to-compromise-the-organization
 
 ---
 
-###### Synacktiv - R&D - GitHub Action - Série d'articles
+###### Synacktiv - R&D - GitHub Actions- Résumé
 
-Série _GitHub Actions exploitation_ sur la CI/CD GitHub : GitHub Action.
-
-- [N°1 - Introduction][github-action-1]
-- [N°2 - Untrusted input][github-action-2]
-- [N°3 - Repo jacking and environment manipulation][github-action-3]
-- [N°4 - Self hosted runners][github-action-4]
-- [N°5 - Dependabot][github-action-5]
-- [Hors série - Hijacking GitHub runners to compromise the organization][github-action-hs]
-
-[github-action-1]:https://www.synacktiv.com/en/publications/github-actions-exploitation-introduction
-[github-action-2]:https://www.synacktiv.com/publications/github-actions-exploitation-untrusted-input
-[github-action-3]:https://www.synacktiv.com/publications/github-actions-exploitation-repo-jacking-and-environment-manipulation
-[github-action-4]:https://www.synacktiv.com/publications/github-actions-exploitation-self-hosted-runners
-[github-action-5]:https://www.synacktiv.com/publications/github-actions-exploitation-dependabot
-[github-action-hs]:https://www.synacktiv.com/publications/hijacking-github-runners-to-compromise-the-organization
+Fonctionnement de GitHub Actions détails d'erreurs de configuration critiques, revue des pièges et des vulnérabilités habituels et comment les développeurs peuvent s'en prémunir.
 
 ---
 
-###### Synacktiv - R&D - GitHub Action - Résumé
-
-Fonctionnement de GitHub Action, détails d'erreurs de configuration critiques, revue des pièges et des vulnérabilités habituels et comment développeurs peuvent s'en prémunir.
-
----
-
-###### Synacktiv - R&D - GitHub Action - Projets vulnérables identifiés
+###### Synacktiv - R&D - GitHub Actions- Projets vulnérables identifiés
 
 CI/CD vulnérables identifiés dans les projets de : [AutoGPT][AutoGPT], [microsoft/generative-ai-for-beginners][ms-ai], [ant-design][ant-design], [cypress][cypress], [excalidraw][excalidraw], [Apache Doris][apache-doris], [FreeRDP][FreeRDP], [Angular][Angular], [swagger-editor][swagger-editor], [Azure Bicep][Azure Bicep], [Alibaba Nacos][Alibaba Nacos], [Homebrew][Homebrew], [Spring Security][Spring Security], [Akash node][Akash node], [WasmEdge][WasmEdge], [Lovell Sharp][Lovell Sharp], [haskell-language-server][haskell-language-server], [Scroll zkEVM circuits][scroll-tech/zkevm-circuits], [tRPC][tRPC]
 
@@ -556,10 +555,9 @@ CI/CD vulnérables identifiés dans les projets de : [AutoGPT][AutoGPT], [micros
 
 ---
 
-###### Synacktiv - R&D - GitHub Action - Outils
+###### Synacktiv - R&D - GitHub Actions- Outils
 
-- 🔵 [synacktiv/octoscan][octoscan] - Scanneur de vulnérabilité pour les fichiers GitHub Action
-- 🔴 [synacktiv/gh-hijack-runner][gh-hijack-runner] - Créé un faux runner GitHub et détourne des tâches de pipeline pour divulguer des secrets CI/CD
+- 🔵 [synacktiv/octoscan][octoscan] - Scanneur de vulnérabilités pour les fichiers GitHub Actions- 🔴 [synacktiv/gh-hijack-runner][gh-hijack-runner] - Créé un faux runner GitHub et détourne des tâches de pipeline pour divulguer des secrets CI/CD
 
 [octoscan]:https://github.com/synacktiv/octoscan
 [gh-hijack-runner]:https://github.com/synacktiv/gh-hijack-runner
@@ -583,8 +581,7 @@ CI/CD vulnérables identifiés dans les projets de : [AutoGPT][AutoGPT], [micros
 Récupérer les secrets stockés dans une CI/CD depuis un jeton d'accès personnel ayant fuité.
 
 - Azure DevOps
-- GitHub Action
-- GitLab CI
+- GitHub Actions- GitLab CI
 
 ---
 
@@ -628,10 +625,10 @@ Nord Stream automatise le processus de récupération fastidieux. Exemple pour l
 
 Emplacement | Nord Stream | Gitleaks / TruffleHog
 --- | --- | ---
-GitHub Action - Organisation | ✅ | ❌
-GitHub Action - Dépôt | ✅ | ❌
-GitHub Action - Environement | ✅ | ❌
-GitHub Action - OpenID Connect | ✅ | ❌
+GitHub Actions- Organisation | ✅ | ❌
+GitHub Actions- Dépôt | ✅ | ❌
+GitHub Actions- Environement | ✅ | ❌
+GitHub Actions- OpenID Connect | ✅ | ❌
 
 ---
 
@@ -681,7 +678,7 @@ Exemples :
 - Lecture de fichier
   - ➡️ Extraction du code source
 
-⚙️ EOS faut tout ça automatiquement
+⚙️ EOS fait tout ça automatiquement
 
 ---
 
