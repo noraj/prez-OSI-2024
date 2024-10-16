@@ -399,6 +399,8 @@ Quelques statistiques de
 
 ## Confusion de dépendances
 
+par _Pierre Martin_ , _Kévin Schouteeten_
+
 ---
 
 ###### Synacktiv - R&D - Confusion de dépendances - Liens
@@ -501,11 +503,14 @@ Support : npm, pypi, cargo, go
 ---
 
 ## GitHub Actions
+
+par _Hugo Vincent_
+
 ---
 
-###### Synacktiv - R&D - GitHub Actions- Série d'articles
+###### Synacktiv - R&D - GitHub Actions - Série d'articles
 
-Série _GitHub Actions exploitation_ sur la CI/CD GitHub : GitHub Actions
+Série _GitHub Actions exploitation_ sur la CI/CD GitHub :
 
 - [N°1 - Introduction][github-actions-1]
 - [N°2 - Untrusted input][github-actions-2]
@@ -523,13 +528,13 @@ Série _GitHub Actions exploitation_ sur la CI/CD GitHub : GitHub Actions
 
 ---
 
-###### Synacktiv - R&D - GitHub Actions- Résumé
+###### Synacktiv - R&D - GitHub Actions - Résumé
 
 Fonctionnement de GitHub Actions détails d'erreurs de configuration critiques, revue des pièges et des vulnérabilités habituels et comment les développeurs peuvent s'en prémunir.
 
 ---
 
-###### Synacktiv - R&D - GitHub Actions- Projets vulnérables identifiés
+###### Synacktiv - R&D - GitHub Actions - Projets vulnérables identifiés
 
 CI/CD vulnérables identifiés dans les projets de : [AutoGPT][AutoGPT], [microsoft/generative-ai-for-beginners][ms-ai], [ant-design][ant-design], [cypress][cypress], [excalidraw][excalidraw], [Apache Doris][apache-doris], [FreeRDP][FreeRDP], [Angular][Angular], [swagger-editor][swagger-editor], [Azure Bicep][Azure Bicep], [Alibaba Nacos][Alibaba Nacos], [Homebrew][Homebrew], [Spring Security][Spring Security], [Akash node][Akash node], [WasmEdge][WasmEdge], [Lovell Sharp][Lovell Sharp], [haskell-language-server][haskell-language-server], [Scroll zkEVM circuits][scroll-tech/zkevm-circuits], [tRPC][tRPC]
 
@@ -555,9 +560,10 @@ CI/CD vulnérables identifiés dans les projets de : [AutoGPT][AutoGPT], [micros
 
 ---
 
-###### Synacktiv - R&D - GitHub Actions- Outils
+###### Synacktiv - R&D - GitHub Actions - Outils
 
-- 🔵 [synacktiv/octoscan][octoscan] - Scanneur de vulnérabilités pour les fichiers GitHub Actions- 🔴 [synacktiv/gh-hijack-runner][gh-hijack-runner] - Créé un faux runner GitHub et détourne des tâches de pipeline pour divulguer des secrets CI/CD
+- 🔵 [synacktiv/octoscan][octoscan] - Scanneur de vulnérabilités pour les fichiers GitHub Actions
+- 🔴 [synacktiv/gh-hijack-runner][gh-hijack-runner] - Créé un faux runner GitHub et détourne des tâches de pipeline pour divulguer des secrets CI/CD
 
 [octoscan]:https://github.com/synacktiv/octoscan
 [gh-hijack-runner]:https://github.com/synacktiv/gh-hijack-runner
@@ -565,6 +571,8 @@ CI/CD vulnérables identifiés dans les projets de : [AutoGPT][AutoGPT], [micros
 ---
 
 ## Extraction de secrets CI/CD
+
+par _Hugo Vincent , Théo Louis-Tisserand_
 
 ---
 
@@ -581,7 +589,8 @@ CI/CD vulnérables identifiés dans les projets de : [AutoGPT][AutoGPT], [micros
 Récupérer les secrets stockés dans une CI/CD depuis un jeton d'accès personnel ayant fuité.
 
 - Azure DevOps
-- GitHub Actions- GitLab CI
+- GitHub Actions
+- GitLab CI
 
 ---
 
@@ -625,10 +634,10 @@ Nord Stream automatise le processus de récupération fastidieux. Exemple pour l
 
 Emplacement | Nord Stream | Gitleaks / TruffleHog
 --- | --- | ---
-GitHub Actions- Organisation | ✅ | ❌
-GitHub Actions- Dépôt | ✅ | ❌
-GitHub Actions- Environement | ✅ | ❌
-GitHub Actions- OpenID Connect | ✅ | ❌
+GitHub Actions - Organisation | ✅ | ❌
+GitHub Actions - Dépôt | ✅ | ❌
+GitHub Actions - Environement | ✅ | ❌
+GitHub Actions - OpenID Connect | ✅ | ❌
 
 ---
 
@@ -649,6 +658,8 @@ GitLab CI - HashiCorp Vault | ✅ | ❌
 ---
 
 ## Symfony
+
+par _Matthieu Barjole_
 
 ---
 
