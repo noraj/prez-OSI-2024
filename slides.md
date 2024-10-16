@@ -697,7 +697,7 @@ Exemples :
 
 ![](assets/diapo-qrcode.png)
 
-https://jmp.sh/ujYF9kyW
+https://jmp.sh/T29K1o69
 
 ---
 
